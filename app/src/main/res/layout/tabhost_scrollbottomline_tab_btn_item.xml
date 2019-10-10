@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/btn_text_color_selector"
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/tip"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/title"
+        android:background="@drawable/tip_round_red_bg_shape"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/point_1"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginBottom="-5dp"
+        android:layout_above="@id/title"
+        android:layout_toRightOf="@id/point_1"
+        android:minWidth="40dp" >
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_msg_notify_bg"
+            android:gravity="center"
+            android:lines="1"
+            android:minWidth="16dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="9999"
+            android:textColor="@color/white"
+            android:textSize="9dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <org.rdengine.widget.BounceScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="55dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#fafafa"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="17dp"
+                    android:paddingBottom="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_mine_setting" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="24dp">
+
+                <com.facebook.fresco.FrescoImageView
+                    android:id="@+id/iv_user_icon"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:scaleType="center"
+                    app:placeholderImage="@drawable/icon_mine_user"
+                    app:roundAsCircle="true"
+                    tools:background="@drawable/icon_mine_user" />
+
+                <TextView
+                    android:id="@+id/tv_regist_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/regist_login"
+                    android:textColor="#444444"
+                    android:textSize="20dp"
+                     />
+
+                <RelativeLayout
+                    android:id="@+id/layout_user_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="14dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_write_invitation_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/shape_rect_radius_ff671a_12"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="填写邀请码"
+                        android:textColor="#ffffff"
+                        android:textSize="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_write_invitation_num"
+                        android:textColor="#444444"
+                        android:textSize="18dp"
+                        tools:text="魔方网" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_user_name"
+                        android:layout_toLeftOf="@id/tv_write_invitation_num"
+                        android:paddingTop="5dp"
+                        >
+                        
+                        <ImageView
+                            android:id="@+id/iv_leval_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="center"
+                            android:src="@drawable/leval_sliver"
+                            />
+                        <TextView
+                            android:id="@+id/tv_leval"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff671a"
+                            android:textSize="12dp"
+                            tools:text="（ 256/1024）"/>
+
+                        <ImageView
+                            android:id="@+id/iv_leval_detail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="10dp"
+                            android:scaleType="center"
+                            android:src="@drawable/icon_ask"
+                            android:paddingLeft="8dp"
+                            android:layout_gravity="center_vertical"/>
+                        
+                        
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp"
+                    android:background="@drawable/icon_mine_balance_bg">
+
+                    <ImageView
+                        android:id="@+id/balance_mask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="15dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/icon_mine_mask" />
+
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="26dp"
+                        android:paddingBottom="11dp"
+                        android:text="@string/balance"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_balance"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_search"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/shape_round_rect_fffff_hex30"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="17dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/search"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_toLeftOf="@id/tv_search"
+                            android:background="@drawable/shape_round_rect_ffffff_4"
+                            android:paddingLeft="17dp"
+                            android:paddingTop="5dp"
+                            android:paddingRight="17dp"
+                            android:paddingBottom="5dp"
+                            android:text="@string/recharges"
+                            android:textColor="#ff671a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_balance_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/tv_recharge"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="10dp"
+                            android:text="0.00"
+                            android:textColor="#ffffff"
+                            android:textSize="25dp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mofang_guild"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_mine_guild"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_mine_guild" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_mine_guild"
+                        android:paddingLeft="8dp"
+                        android:text="@string/mofang_guild"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_mofang_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+
+                    <TextView
+                        android:id="@+id/tv_guild_users"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_mofang_right"
+                        android:paddingRight="12dp"
+                        android:text="0人"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_invitate_friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_invitate_friend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_invitate_friend" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_invitate_friend"
+                        android:paddingLeft="8dp"
+                        android:text="@string/invitate_friend"
+                        android:textColor="#ff671a"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_currency_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_currency_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_currency_record" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_currency_record"
+                        android:paddingLeft="8dp"
+                        android:text="@string/currency_record"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_shop_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_shop_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_shop_record" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_shop_record"
+                        android:paddingLeft="8dp"
+                        android:text="@string/shop_record"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_exchange_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_exchange_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_exchange_record" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_exchange_record"
+                        android:paddingLeft="8dp"
+                        android:text="@string/exchange_record"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mine_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_mine_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_mine_game" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_mine_game"
+                        android:paddingLeft="8dp"
+                        android:text="@string/mine_collection"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_mine_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ececec" />
+
+                    <ImageView
+                        android:id="@+id/iv_mine_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_mine_message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_mine_message"
+                        android:paddingLeft="8dp"
+                        android:text="@string/mine_message"
+                        android:textColor="#444444"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_back_right_black" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </org.rdengine.widget.BounceScrollView>
+
+
+</LinearLayout>

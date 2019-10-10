@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">框架</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="download">下载</string>
+
+    <string name="error_do_anything">操作失败...</string>
+
+    <!-- 网络错误 -->
+    <string name="error_http_request">请求失败</string>
+    <string name="error_network">网络错误</string>
+    <string name="error_network_content">网络不见了，点击屏幕重新加载</string>
+
+    <!-- 内容为空 -->
+    <string name="content_empty">暂无内容</string>
+
+    <!-- 数据加载错误 -->
+    <string name="error_load">数据加载失败，点击屏幕重试</string>
+
+    <!-- loadding -->
+    <string name="content_loading">正在加载中...</string>
+
+    <string name="content_handling">正在处理...</string>
+
+
+    <!-- 未登录提示-->
+    <string name="need_login">还没有登录哦！点击屏幕登录</string>
+
+    <!-- 分享 成功失败 -->
+    <string name="share_success">分享成功～</string>
+    <string name="share_fail">分享失败了，要不我们再试一次？</string>
+    <string name="share_def_des">一个能赚钱的游戏短视频社区</string>
+
+    <!-- 保存图片 成功失败 -->
+
+    <string name="def_nickname">匿名</string>
+
+    <string name="quit_ask">确定要退出登录吗？</string>
+    <string name="back_ask">确定要退出吗？</string>
+
+
+    <!-- 登录页-->
+    <string name="login">登录</string>
+    <string name="unlogin">退出登录</string>
+    <string name="account_hint">请输入手机号</string>
+    <string name="password_hint">密码</string>
+    <string name="regist_phone">手机号注册（推荐）/</string>
+    <string name="regist_account">帐号注册</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="get_vcode">获取验证码</string>
+    <string name="reget_vcode">重新获取</string>
+    <string name="get_vcode_wait">%1$ss再获取</string>
+    <string name="login_success">登录成功</string>
+
+    <!-- 手机号注册页-->
+    <string name="phone_regist_title">手机号注册</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="phone_code_hint">请输入验证码</string>
+    <string name="phone_pwd_hint">请输入密码</string>
+    <string name="invitation_code_hint">请输入邀请码(选填)</string>
+    <string name="send_code">发送验证码</string>
+    <string name="agree_user_rules">我已经阅读并同意《用户注册协议》</string>
+    <string name="regist">注册</string>
+    <string name="next">下一步</string>
+    <string name="register_success">注册成功</string>
+
+    <!-- 帐号注册页-->
+    <string name="account_regist_title">帐号注册</string>
+    <string name="comfirm_password">再次确认密码</string>
+    <string name="regist_account_hint">支持4-18位字母、数字、下划线 、首位为字母</string>
+    <string name="password_unlike">两次密码输入不一致，请重新输入</string>
+
+    <!-- 忘记密码页-->
+    <string name="forget_pwd_title">忘记密码</string>
+    <string name="bind_phone_find">绑定手机找回</string>
+    <string name="accounts_appeal_find">帐号申诉找回</string>
+    <string name="account_appeal_detail">如果您的账号未绑定手机号，请联系客服进申请找回客服电话：010-85817088</string>
+    <string name="account_appeal_user">亲爱的用户</string>
+
+    <!-- 我的页-->
+    <string name="regist_login">注册/登录</string>
+    <string name="recharges">充值</string>
+    <string name="search">查看</string>
+    <string name="balance">余额</string>
+    <string name="mofang_guild">魔方公会</string>
+    <string name="invitate_friend">邀请好友</string>
+    <string name="currency_record">提现记录</string>
+    <string name="shop_record">消费记录</string>
+    <string name="exchange_record">兑换记录</string>
+    <string name="mine_collection">我的收藏</string>
+    <string name="mine_message">我的消息</string>
+    <string name="get_usermsg_failed">获取用户信息失败</string>
+    <string name="user_name_hit">请输入昵称</string>
+
+    <!-- 游戏详情页-->
+    <string name="comment_hint">写评论(最多150字)</string>
+    <string name="app_introduction">应用介绍</string>
+    <string name="app_message">信息</string>
+    <string name="app_develop">开发</string>
+    <string name="app_time">时间</string>
+
+
+    <!-- 游戏页-->
+    <string name="game_hint">搜索游戏</string>
+
+    <!-- 游戏礼包页-->
+    <string name="welfare_hint">搜索游戏、礼包名称</string>
+    <string name="welfare">礼包</string>
+    <string name="convertible_goods">兑换商品</string>
+
+    <!-- 修改绑定银行卡-->
+    <string name="change">修改</string>
+    <string name="save">保存</string>
+
+    <!-- 客服中心-->
+    <string name="service_wx_hascopy">微信复制成功</string>
+    <string name="service_qq_hascopy">QQ复制成功</string>
+    <string name="user_agreement">用户协议</string>
+    <!-- 余额帮助-->
+    <string name="helptext_1">1.余额=魔方币（MCC）+福利币(MRC)</string>
+    <string name="helptext_2">2.魔方币通过充值获取，不可提现1魔方币=1 人民币。</string>
+    <string name="helptext_3">3.福利币通过公会运营获取，各项公会奖励 皆以福利币形式发送。1福利币=1人民币</string>
+    <string name="helptext_4">4.余额皆可用于游戏内消费，游戏内消费将 优先扣除魔方币</string>
+    <string name="helptext_5">5.福利币还可用于商城兑换商品，可提现。</string>
+    <!-- 我的资产-->
+    <string name="assets_num">资产余额</string>
+    <string name="mofang_key">魔方币</string>
+
+    <!-- 充值-->
+    <string name="currency_hint">请输入自定义数额</string>
+    <string name="currency_unit_prcie">1魔方币=1人民币</string>
+    <string name="currency_need_pay">需支付</string>
+    <string name="currency_choose_payway">请选择支付方式</string>
+    <string name="currency_detail_1">魔方币说明：不会过期，不支持退款，可充值本平台里任意游戏或转增本平台其他用户。</string>
+    <string name="currency_detail_2">充值游戏方法：游戏内充值，选择余额支付</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="wechatpay">微信支付</string>
+
+    <!-- 提现-->
+    <string name="currency">提现</string>
+    <string name="currency_mrc">提取MRC</string>
+    <string name="currency_all">全部提取</string>
+    <string name="currency_min_num_hint">最小提现数 300MRC</string>
+    <string name="currency_to_bank">提现到银行卡</string>
+    <string name="currenct_to_alipay">提现到支付宝</string>
+    <string name="currency_down_time">到账时间</string>
+    <string name="time_get">2个工作日内到账</string>
+    <string name="not_bind_to_bind">当前未绑定，去绑定</string>
+    <string name="currency_to_mti">提现到MTI</string>
+    <string name="currnecy_history">查看提现记录</string>
+    <string name="currency_applay_time">申请时间</string>
+    <string name="currency_applay_accounts">提现帐户</string>
+    <string name="currency_num">提现数量 (MRC)</string>
+    <string name="arrive_num">预计到账 (MTI)</string>
+    <string name="bind_bank">绑定银行卡</string>
+    <string name="bind_alipay">绑定支付宝</string>
+    <string name="bind_mti">绑定MTI钱包</string>
+    <string name="fix_bind_alipay">修改绑定支付宝</string>
+    <string name="fix_bind_bank">修改绑定银行卡</string>
+    <string name="fix_bind_mti">修改绑定MTI钱包</string>
+    <string name="fund_pwd">资金密码</string>
+
+    <!-- 定位-->
+    <string name="retry_adr">重新定位</string>
+    <string name="retry_adr_failed">试试，手动输入</string>
+    <string name="adr_hint">输入城市名进行搜索</string>
+    <string name="adr_failed">定位失败 !</string>
+    <string name="adr_loading">正在定位....</string>
+    <!-- 设置-->
+    <string name="safe_center">安全中心</string>
+    <string name="contact_service">联系客服</string>
+    <string name="about_mofang">关于魔方</string>
+
+    <!-- 图片上传失败 -->
+    <string name="img_upload_fail">你的图片上传失败啦，要不要再传一遍？</string>
+    <string name="gender_unknow">未知</string>
+    <string name="gender_man">男</string>
+    <string name="gender_woman">女</string>
+    <string name="set_paypwd">设置资金密码</string>
+    <string name="fix_paypwd">修改资金密码</string>
+    <!-- 设置资金密码-->
+    <string-array name="set_mgstation_trade_step">
+        <item>请设您的资金安全密码</item>
+        <item>请确认您的资金密码</item>
+    </string-array>
+    <string-array name="set_mgstation_trade_step_btn">
+        <item>下一步</item>
+        <item>确 认</item>
+    </string-array>
+    <string-array name="fix_mgstation_step">
+        <item>请输入原密码</item>
+        <item>请输入新密码</item>
+    </string-array>
+    <string name="text_setmgstationpwd">请输入6位数字资金密码，资金密码用于提现和兑换礼包 商品，请务必记住。</string>
+    <string name="set_wallet_trade_step_err_notsame">密码不一致，剩余次数%1$s次</string>
+    <string name="retry_input_pin">请重新填写资金安全</string>
+    <string name="fix_pin_tip">如需修改，请先输入原6位数字资金安全密码</string>
+    <string name="find_pinpwd">找回资金密码</string>
+
+    <!--实名认证-->
+    <string name="bind_type_commit">您的实名认证申请将在2个工作日内处理完成，请耐心等待</string>
+    <string name="bind_title_commit">实名认证提交成功</string>
+    <string name="bind_title_faild">认证失败</string>
+    <string name="bind_type_faild">请确保实名信息准确无误，图片清晰</string>
+    <string name="rebind_agin">重新认证</string>
+    <string name="bind_success">您已完成实名认证</string>
+    <string name="input_wallet_pin">输入资金安全密码</string>
+    <string name="pincode_error_tip">密码错误，还可以输入%1$s次，%2$s次错误后密码将锁定%3$s小时</string>
+    
+    <!-- 我的公会-->
+    <string name="guild_direct_fans">直属粉丝</string>
+    <string name="guild_recommend_fans">推荐粉丝</string>
+    <string name="guild_city_partner">城市合伙人</string>
+    <string name="guild_getknow">了解公会</string>
+    <string name="guild_invitate">公会邀请</string>
+
+
+</resources>

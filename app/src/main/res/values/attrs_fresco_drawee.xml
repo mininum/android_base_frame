@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="GenericDraweeView">
+
+        <!-- 显示加载到的图片时的过度时间  从无到有 -->
+        <attr name="fadeDuration" format="integer" />
+        <!-- 图片宽高比例=宽/高 -->
+        <attr name="viewAspectRatio" format="float" />
+
+        <!-- 占位图 -->
+        <attr name="placeholderImage" format="reference" />
+        <attr name="placeholderImageScaleType" format="string">
+            <enum name="NONE" value="-1" />
+            <enum name="FIT_XY" value="0" />
+            <enum name="FIT_START" value="1" />
+            <enum name="FIT_CENTER" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="CENTER_INSIDE" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="FOCUS_CROP" value="7" />
+        </attr>
+
+        <!-- 点击重试图 -->
+        <attr name="retryImage" format="reference" />
+        <attr name="retryImageScaleType" format="string">
+            <enum name="NONE" value="-1" />
+            <enum name="FIT_XY" value="0" />
+            <enum name="FIT_START" value="1" />
+            <enum name="FIT_CENTER" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="CENTER_INSIDE" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="FOCUS_CROP" value="7" />
+        </attr>
+
+        <!-- 失败图 -->
+        <attr name="failureImage" format="reference" />
+        <attr name="failureImageScaleType" format="string">
+            <enum name="NONE" value="-1" />
+            <enum name="FIT_XY" value="0" />
+            <enum name="FIT_START" value="1" />
+            <enum name="FIT_CENTER" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="CENTER_INSIDE" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="FOCUS_CROP" value="7" />
+        </attr>
+
+        <!-- 进度条 -->
+        <attr name="progressBarImage" format="reference" />
+        <attr name="progressBarImageScaleType" format="string">
+            <enum name="NONE" value="-1" />
+            <enum name="FIT_XY" value="0" />
+            <enum name="FIT_START" value="1" />
+            <enum name="FIT_CENTER" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="CENTER_INSIDE" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="FOCUS_CROP" value="7" />
+        </attr>
+        <!-- 自动旋转间隔 -->
+        <attr name="progressBarAutoRotateInterval" format="integer" />
+
+        <!-- 实际加载的图片缩放类型 具体类型参见ScalingUtils.ScaleType -->
+        <attr name="actualImageScaleType" format="string">
+            <enum name="NONE" value="-1" />
+            <enum name="FIT_XY" value="0" />
+            <enum name="FIT_START" value="1" />
+            <enum name="FIT_CENTER" value="2" />
+            <enum name="FIT_END" value="3" />
+            <enum name="CENTER" value="4" />
+            <enum name="CENTER_INSIDE" value="5" />
+            <enum name="CENTER_CROP" value="6" />
+            <enum name="FOCUS_CROP" value="7" />
+        </attr>
+
+        <!-- 背景图 -->
+        <attr name="backgroundImage" format="reference" />
+        <!-- 覆盖图 -->
+        <attr name="overlayImage" format="reference" />
+        <!-- 覆盖图点击时 -->
+        <attr name="pressedStateOverlayImage" format="reference" />
+
+        <!-- 圆形图片 -->
+        <attr name="roundAsCircle" format="boolean" />
+        <!-- 圆角半径 -->
+        <attr name="roundedCornerRadius" format="dimension" />
+        <attr name="roundTopLeft" format="boolean" />
+        <attr name="roundTopRight" format="boolean" />
+        <attr name="roundBottomRight" format="boolean" />
+        <attr name="roundBottomLeft" format="boolean" />
+        <!-- 圆形内覆盖颜色 -->
+        <attr name="roundWithOverlayColor" format="color" />
+        <!-- 描边宽度 -->
+        <attr name="roundingBorderWidth" format="dimension" />
+        <!-- 描边颜色 -->
+        <attr name="roundingBorderColor" format="color" />
+        <attr name="roundingBorderPadding" format="dimension" />
+    </declare-styleable>
+
+</resources>

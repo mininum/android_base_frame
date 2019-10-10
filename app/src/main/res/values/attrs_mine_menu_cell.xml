@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MineMenuCell">
+        <attr name="MMC_title" format="string" />
+        <attr name="MMC_des" format="string" />
+        <attr name="MMC_image" format="reference" />
+    </declare-styleable>
+
+</resources>

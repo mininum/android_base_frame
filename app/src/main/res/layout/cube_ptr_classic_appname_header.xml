@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              tools:background="@color/black_20">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+
+        <com.facebook.fresco.FrescoImageView
+            android:id="@+id/ptr_classic_header_rotate_appname"
+            android:layout_width="90dp"
+            android:layout_height="17dp"
+            android:layout_centerInParent="true"
+            tools:background="@mipmap/ic_launcher"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

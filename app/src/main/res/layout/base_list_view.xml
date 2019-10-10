@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar">
+
+        <org.rdengine.widget.cobe.PtrListLayout
+            android:id="@+id/ptrlistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listview"
+                style="@style/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/view_background">
+            </ListView>
+        </org.rdengine.widget.cobe.PtrListLayout>
+
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!--<include layout="@layout/titlebar_shadow"/>-->
+</RelativeLayout>

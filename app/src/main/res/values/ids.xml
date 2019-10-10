@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="gallery" type="id"/>
+
+    <item name="ptr_loadmore_container" type="id"/>
+
+    <item name="titlebar" type="id"/>
+    <item name="btn_back" type="id"/>
+    <item name="titlebar_title_tv" type="id"/>
+    <item name="titlebar_right_tv" type="id"/>
+    <item name="titlebar_right_iv" type="id"/>
+    <item name="statemask" type="id"/>
+
+    <item name="empty_view" type="id"/>
+
+    <item name="progressBar" type="id"/>
+
+    <item name="viewpager" type="id"/>
+
+    <!--web页面中用到的视频全屏容器-->
+    <item name="layout_customview_container" type="id"/>
+    <item name="layout_customview" type="id"/>
+
+    <item name="cell" type="id"/>
+
+    <!--zxingID-->
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+
+
+</resources>

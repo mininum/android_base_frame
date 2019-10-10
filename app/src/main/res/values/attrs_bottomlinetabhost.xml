@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="bottomlinetabhost">
+
+        <!-- 底线颜色 -->
+        <attr name="bottomlinetabhost_line_color" format="color" />
+        <!-- tabitem的layout布局 -->
+        <attr name="bottomlinetabhost_item_layout_id" format="reference" />
+    </declare-styleable>
+
+</resources>

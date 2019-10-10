@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="lb_text" format="reference|string"/>
+        <attr name="lb_textcolor" format="reference|color"/>
+        <attr name="lb_textsize" format="reference|dimension"/>
+        <attr name="lb_progressbar_drawable" format="reference"/>
+        <attr name="lb_progressbar_color" format="color"/>
+        <attr name="lb_progressbar_size" format="reference|dimension"/>
+    </declare-styleable>
+</resources>

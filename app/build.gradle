@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.android.frame"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            //调试
+         //   signingConfig signingConfigs.debug//设置签名信息
+
+            // 编译发布包的开关, 在java代码中的调用方式为：BuildConfig.LOG_DEBUG
+            buildConfigField "boolean", "BUILD_RELEASE", "false"
+        }
+
+        release {
+
+            // 编译发布包的开关, 在java代码中的调用方式为：BuildConfig.LOG_DEBUG
+            buildConfigField "boolean", "BUILD_RELEASE", "true"
+
+            minifyEnabled true // 是否混淆
+            shrinkResources true // 是否去除无效的资源文件
+            proguardFiles 'proguard.cfg' //混淆配置
+         //   signingConfig signingConfigs.release//设置签名信息
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+   // implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Android Support
+    implementation files('libs/android-support-v7-palette.jar')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+
+    // Fresco 图片显示
+    implementation files('libs/bolts-android-1.1.4.jar')
+    implementation files('libs/drawee-v0.9.0.jar')
+    implementation files('libs/fbcore-v0.9.0.jar')
+    implementation files('libs/fresco-v0.9.0.jar')
+    implementation files('libs/imagepipeline-base-v0.9.0.jar')
+    implementation files('libs/imagepipeline-okhttp-v0.9.0.jar')
+    implementation files('libs/imagepipeline-v0.9.0.jar')
+    implementation files('libs/static-webp-v0.9.0.jar')
+
+    // OKHttp
+    implementation files('libs/okhttp-3.4.1.jar')
+    implementation files('libs/okio-1.9.0.jar')
+
+    // 七牛 图片服务
+    implementation files('libs/qiniu-happy-dns-0.2.13.jar')
+
+    // 七牛 视频SDK
+    // libqcCodec.so  libqcOpenSSL.so libQPlayer.so
+    implementation files('libs/pldroid-player-2.0.0.jar')
+
+    // share SDK
+    implementation files('libs/ShareSDK-Core-2.7.6.jar')
+    implementation files('libs/ShareSDK-QQ-2.7.6.jar')
+    implementation files('libs/ShareSDK-QZone-2.7.6.jar')
+    implementation files('libs/ShareSDK-SinaWeibo-2.7.6.jar')
+    implementation files('libs/ShareSDK-Wechat-2.7.6.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-2.7.6.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-2.7.6.jar')
+    implementation files('libs/MobTools-2016.0816.1507.jar')
+    implementation files('libs/MobCommons-2016.0816.1507.jar')
+    implementation files('libs/zxing-core-3.3.jar')
+
+    // 友盟统计 umeng 新版
+    implementation 'com.umeng.umsdk:common:2.0.0'  // 基础组件
+    implementation 'com.umeng.umsdk:analytics:8.0.0' // 统计sdk
+
+    // BRVAH  多功能的RecyclerAdapter
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+  //  implementation 'com.github.Blincheng:AddressSelector:v1.0.4'
+
+    //高德地图定位
+    implementation files('libs/AMap_Location_V4.7.0_20190708.jar')
+
+    //腾讯图形验证码
+    implementation(name: 'captchasdk-release-1.0.2', ext: 'aar')
+
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0-alpha2'
+    implementation 'com.android.support:multidex:1.0.3'
+}

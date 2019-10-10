@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StarView">
+
+        <attr name="star_num" format="reference|integer"></attr>
+        <attr name="select_num" format="integer"></attr>
+    </declare-styleable>
+</resources>

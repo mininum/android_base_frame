@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titlebar">
+
+        <org.rdengine.widget.cobe.PtrGridLayout
+            android:id="@+id/ptrlistlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <org.rdengine.widget.cobe.GridViewWithHeaderAndFooter
+                android:id="@+id/gridview"
+                style="@style/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:horizontalSpacing="10dp"
+                android:numColumns="3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp">
+            </org.rdengine.widget.cobe.GridViewWithHeaderAndFooter>
+        </org.rdengine.widget.cobe.PtrGridLayout>
+
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!--<include layout="@layout/titlebar_shadow"/>-->
+</RelativeLayout>

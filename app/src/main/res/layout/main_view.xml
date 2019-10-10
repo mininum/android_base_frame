@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_botton_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/main_botton_bar_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/shape_gradient_000000_0a_00"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/main_tabhost_height"
+                android:background="@color/view_background"
+                />
+
+        </LinearLayout>
+
+        <org.rdengine.widget.tabhost.main.MainTabHost
+            android:id="@+id/tab_host"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_tabhost_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <!--app:imgHeight="27dp"-->
+            <!--app:imgWidth="34.2dp"-->
+            <org.rdengine.widget.tabhost.main.MainTabButton
+                android:id="@+id/HT_HOME"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/home_tab_btn_bg_selector_home"
+                app:imgHeight="21dp"
+                app:imgWidth="21dp"
+                app:tabtext="首页"/>
+
+
+            <org.rdengine.widget.tabhost.main.MainTabButton
+                android:id="@+id/HT_GAME"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/home_tab_btn_bg_selector_game"
+                app:imgHeight="21dp"
+                app:imgWidth="21dp"
+                app:tabtext="游戏"/>
+
+
+            <org.rdengine.widget.tabhost.main.MainTabButton
+                android:id="@+id/HT_WELFARE"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/home_tab_btn_bg_selector_welfare"
+                app:imgHeight="21dp"
+                app:imgWidth="21dp"
+                app:tabtext="福利"/>
+
+            <org.rdengine.widget.tabhost.main.MainTabButton
+                android:id="@+id/HT_MINE"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:drawableTop="@drawable/home_tab_btn_bg_selector_mine"
+                app:imgHeight="21dp"
+                app:imgWidth="21dp"
+                app:tabtext="我的"/>
+
+        </org.rdengine.widget.tabhost.main.MainTabHost>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/titlebar"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statemask"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/full_transparent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back_black"/>
+
+        <TextView
+            android:id="@+id/titlebar_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/titlebar_height"
+            android:layout_marginRight="@dimen/titlebar_height"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#151515"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/titlebar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:text="确定"
+            android:textColor="@color/titlebar_textbtn_color_selector"
+            android:textSize="14dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/titlebar_right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+

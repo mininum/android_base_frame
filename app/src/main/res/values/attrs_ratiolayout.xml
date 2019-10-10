@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RatioLayout">
+        <attr name="rl_aspectRatio" format="float" />
+        <attr name="rl_adjustWidth" format="boolean" />
+    </declare-styleable>
+
+</resources>

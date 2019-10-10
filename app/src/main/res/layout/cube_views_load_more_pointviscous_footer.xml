@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="vertical"
+              tools:background="@color/black_20">
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--
+             <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        -->
+
+        <!--
+        <org.rdengine.widget.ProgressBarCircular
+            android:id="@+id/progressbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+            -->
+
+        <org.rdengine.widget.LoadmorePointViscousView
+            android:id="@+id/progressbar"
+            android:layout_width="60dp"
+            android:layout_height="25dp"/>
+
+        <!--
+        <TextView
+            android:id="@+id/cube_views_load_more_default_footer_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            tools:text="asdfasdfas"
+            android:gravity="center"/>
+            -->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_tabhost_height"
+        android:background="#00000000"
+        tools:background="@color/black_20"/>
+
+</LinearLayout>

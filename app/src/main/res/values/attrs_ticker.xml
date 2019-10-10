@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="tiker">
+        <attr name="tiker_layout_id" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="tiker_indicator">
+        <attr name="tiker_indicator_drawable" format="reference"></attr>
+        <attr name="tiker_indicator_margin" format="reference|dimension"></attr>
+        <attr name="tiker_indicator_w" format="reference|dimension"/>
+        <attr name="tiker_indicator_w_selected" format="reference|dimension"/>
+    </declare-styleable>
+
+</resources>

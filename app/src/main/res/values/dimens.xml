@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="line_height">1px</dimen>
+    <dimen name="main_tabhost_height">49dp</dimen>
+    <dimen name="titlebar_height">44dp</dimen>
+    <dimen name="titlebar_shadow_height">12dp</dimen>
+
+
+    <dimen name="item_feed_padding_h">15dp</dimen>
+    <dimen name="item_feed_padding_v">16dp</dimen>
+
+
+    <dimen name="line_spacing_extra_a">2.5dp</dimen>
+
+    <!--
+    <dimen name="line_spacing_extra_a">7dp</dimen>
+    <dimen name="line_spacing_extra_b">6dp</dimen>
+
+    -->
+
+
+</resources>

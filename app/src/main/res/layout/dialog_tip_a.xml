@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:background="@color/black"
+                tools:layout_height="match_parent"
+    >
+
+    <org.rdengine.widget.RoundFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:corner_radius_all="10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:minHeight="75dp"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="#333333"
+                    android:textSize="18dp"
+                    tools:text="标题"/>
+
+                <TextView
+                    android:id="@+id/tips_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/line_spacing_extra_a"
+                    android:paddingBottom="15dp"
+                    android:textColor="#333333"
+                    android:textSize="15dp"
+                    tools:text="内容"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D8D8D8"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:divider="@drawable/shape_divider_d8d8d8_1dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="取消"
+                        android:textColor="#666666"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="确定"
+                        android:textColor="#0084FF"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </org.rdengine.widget.RoundFrameLayout>
+
+</RelativeLayout>

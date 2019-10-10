@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TagCells">
+
+        <!-- 标签的水平间距 -->
+        <attr name="divide_horizontal" format="dimension" />
+        <!-- 标签的垂直间距 -->
+        <attr name="divide_vertical" format="dimension" />
+        <!-- 标签的layout布局 -->
+        <attr name="cell_layout_id" format="reference" />
+        <!-- 每行的 标签 是否居中 -->
+        <attr name="cell_is_center" format="boolean" />
+        <!-- 是否只有一行标签 -->
+        <attr name="singleline" format="boolean" />
+        <!--最大行数-->
+        <attr name="maxlines" format="integer"/>
+
+        <attr name="editmode_size" format="integer"/>
+    </declare-styleable>
+
+</resources>

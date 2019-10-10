@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="LightLineLoadingProgress">
+        <attr name="light_color" format="color"/>
+        <attr name="light_ratio" format="float"></attr>
+        <attr name="light_start_progress" format="float"></attr>
+    </declare-styleable>
+</resources>

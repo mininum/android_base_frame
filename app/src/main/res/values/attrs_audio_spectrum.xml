@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="audio_spectrum">
+        <attr name="columnColor" format="color"/>
+        <attr name="columnWidth" format="dimension"/>
+        <attr name="columnMaxHeight" format="dimension"/>
+        <attr name="columnMinHeight" format="dimension"/>
+        <attr name="columnSpace" format="dimension"/>
+        <attr name="columnCount" format="integer"/>
+    </declare-styleable>
+</resources>

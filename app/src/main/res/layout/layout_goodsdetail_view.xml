@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar"
+        android:id="@+id/title_bar"/>
+
+    <org.rdengine.widget.BounceScrollView
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_goods_img"
+                android:layout_width="match_parent"
+                android:layout_height="355dp"
+                android:background="@drawable/ic_launcher_background"/>
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textSize="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                tools:text="OPPO Find7 128G正版"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="11dp">
+                <TextView
+                    android:id="@+id/tv_goods_mrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f71028"
+                    android:textSize="13dp"
+                    android:layout_centerVertical="true"
+                    android:text="10 MRC"/>
+                <TextView
+                    android:id="@+id/tv_goods_cny"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#b3b3b3"
+                    android:text="¥1024"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="10dp"
+                    android:layout_toRightOf="@id/tv_goods_mrc"/>
+
+                <TextView
+                    android:id="@+id/tv_goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#b3b3b3"
+                    android:textSize="12dp"
+                    android:layout_alignParentRight="true"
+                    android:text="剩余数量：10"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="8dp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ececec"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="14dp"
+                android:textColor="#444444"
+                android:text="商品详情"/>
+
+            <TextView
+                android:id="@+id/tv_goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="12dp"
+                android:textColor="#b3b3b3"
+                android:text="3月份上架 敬请期待 OPPOFind X 冰珀蓝 128G 手机限量版oppo r17 r19曲面屏兰博基尼版findx新款旗舰手机oppo未来x值得您的 拥有。"/>
+
+        </LinearLayout>
+    </org.rdengine.widget.BounceScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="15dp"
+        >
+        <org.rdengine.widget.LoadingButton
+            android:id="@+id/btn_convertible"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_round_rect_ff671a"
+            app:lb_text="去兑换"
+            app:lb_textcolor="#ffffff"
+            app:lb_progressbar_color="@color/white_50"
+            app:lb_progressbar_size="20dp"
+            app:lb_textsize="16dp"></org.rdengine.widget.LoadingButton>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

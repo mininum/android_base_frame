@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <org.rdengine.widget.RatioRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rl_adjustWidth="false"
+        app:rl_aspectRatio="1" >
+
+        <com.facebook.fresco.FrescoImageView
+            android:id="@+id/fiv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:placeholderImage="@drawable/def_image"
+            tools:background="#ff000000"
+            app:viewAspectRatio="1" />
+
+        <FrameLayout
+            android:id="@+id/btn_select"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+             >
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_confirm" />
+
+            <TextView
+                android:id="@+id/tv_selected"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_oval_ff141923"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </org.rdengine.widget.RatioRelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:background="@color/black_30">
+
+    <FrameLayout
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <org.rdengine.widget.CustomGallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <!--
+    <org.rdengine.widget.viewpager.RDViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+        -->
+
+    </FrameLayout>
+
+    <org.rdengine.widget.SlidingIndicator
+        android:id="@+id/circle_pageindicator"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_alignBottom="@id/aaa"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:visibility="visible"
+        app:tiker_indicator_drawable="@drawable/indicator_ticker_3"
+        app:tiker_indicator_margin="2.5dp"
+        app:tiker_indicator_w="16dp"
+        app:tiker_indicator_w_selected="16dp"
+        />
+
+</RelativeLayout>

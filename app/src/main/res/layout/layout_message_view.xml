@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar"/>
+    
+    <RelativeLayout
+        android:id="@+id/layout_mofang_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <com.facebook.fresco.FrescoImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:placeholderImage="@drawable/icon_mofang_msg"
+            app:roundAsCircle="true"
+            android:id="@+id/iv_msg_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_msg_icon"
+            android:textColor="#444444"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:text="魔方助手"
+            android:paddingLeft="10dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_right_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="6dp"/>
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ececec"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout_system_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+        <com.facebook.fresco.FrescoImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:placeholderImage="@drawable/icon_system_msg"
+            app:roundAsCircle="true"
+            android:id="@+id/iv_system_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_system_icon"
+            android:textColor="#444444"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:text="系统消息"
+            android:paddingLeft="10dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/icon_back_right_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="6dp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ececec"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
